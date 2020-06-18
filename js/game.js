@@ -11,7 +11,7 @@ class Game{
     }
 
     update (state){
-        database.ref('/').set({
+        database.ref('/').update({
             gameState: state
         });
     }
